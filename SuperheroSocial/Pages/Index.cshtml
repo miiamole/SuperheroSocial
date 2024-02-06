@@ -5,7 +5,23 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+   <h1>Superhero Social Club</h1>
+
+   <h4>New hero? Sign up for free!</h4>
+   <div>
+       <div>
+            <br />
+            <label>Superhero name: </label>
+            <input type="text" placeholder="Superhero name" asp-for="@Model.Name" />
+       </div>
+        <div>
+            <br />
+            <label>Secret identity: </label>
+            <input type="text" placeholder="Superhero name" asp-for="@Model.Name" />
+        </div>
+       
+        <a asp-page="Overview" asp-route-name="Overview" class="btn btn-warning">Sign up!</a>
+   </div>
+   
 </div>
 

@@ -23,6 +23,14 @@ namespace SuperheroSocial.Pages
         {
             List<SuperpowerModel> powers = new List<SuperpowerModel>();
             SuperpowerModel power = new SuperpowerModel();
+            Random random = new Random();
+
+            if (Id != null)
+            {
+                int id = int.Parse(Id);
+                return RedirectToPage("/Change", new { id });
+            }
+
 
             if (Superpower1 != null)
             {
@@ -48,6 +56,8 @@ namespace SuperheroSocial.Pages
             }
 
             return Page();
+
+
         }
     }
 }

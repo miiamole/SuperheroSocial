@@ -2,3 +2,17 @@
 @model SuperheroSocial.Pages.OverviewModel
 @{
 }
+
+<h1>Welcome to the club {@Model.Hero.Name}</h1>
+<img src="{@Model.Hero.Image}" />
+
+
+<p>
+    You have the power of @foreach (SuperpowerModel power in Model.Hero.SuperPower)
+    {
+        <p>@power  </p>
+    }
+</p>
+<div>
+
+</div>

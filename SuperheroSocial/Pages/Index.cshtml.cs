@@ -24,6 +24,7 @@ namespace SuperheroSocial.Pages
             List<SuperpowerModel> powers = new List<SuperpowerModel>();
             SuperpowerModel power = new SuperpowerModel();
             Random random = new Random();
+            int picIndex = random.Next(SuperheroManager.images.Count());
 
             if (Id != null)
             {
@@ -50,9 +51,11 @@ namespace SuperheroSocial.Pages
 
             if (Name != null)
             {
-                SuperheroModel newHero = new SuperheroModel() { Name = Name, SecretIdentity = SecretIdentity, SuperPower = powers, Image = "" };
+                SuperheroModel newHero = new SuperheroModel() { Name = Name, SecretIdentity = SecretIdentity, SuperPower = powers, Image = SuperheroManager.images[picIndex] };
 
                 SuperheroManager.heroes.Add(newHero);
+
+                return RedirectToPage("/Overview", new { newHero });
             }
 
             return Page();

@@ -4,9 +4,11 @@ namespace SuperheroSocial.Pages
 {
     public class OverviewModel : PageModel
     {
-        public SuperheroModel? superhero { get; set; }
-        public void OnGet(string name, string identity, string superpower)
+        public SuperheroModel? Hero { get; set; }
+        public void OnGet(SuperheroModel hero)
         {
+
+            Hero = hero;
 
         }
     }

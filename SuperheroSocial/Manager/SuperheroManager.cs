@@ -23,8 +23,43 @@
                 Id = 1,
                 Name = "Superman",
                 SecretIdentity = "Clark Kent",
-
+                SuperPower = new List<SuperpowerModel>(){powers[1],powers[2]},
+                Image = SuperheroManager.images[0],
             }
+        };
+
+        public static List<SuperpowerModel> powers { get; set; } = new()
+        {
+            new SuperpowerModel ()
+            {
+                Superpower = "X-Ray Vision"
+            },
+            new SuperpowerModel ()
+            {
+                Superpower = "Flight"
+            },
+            new SuperpowerModel ()
+            {
+                Superpower = "Super Speed"
+            },
+            new SuperpowerModel ()
+            {
+                Superpower = "Telepathy"
+            },
+            new SuperpowerModel ()
+            {
+                Superpower = "Telekinesis"
+
+            },
+            new SuperpowerModel ()
+            {
+                Superpower = "Elemental Control"
+            },
+            new SuperpowerModel ()
+            {
+                Superpower = "Teleportation"
+            },
+
         };
 
     }

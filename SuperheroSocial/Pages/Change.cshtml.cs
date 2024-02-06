@@ -6,7 +6,7 @@ namespace SuperheroSocial.Pages
 	public class ChangeModel : PageModel
 	{
 		[BindProperty]
-		public SuperheroModel Superheroes { get; set; }
+		public List<SuperheroModel> heroes { get; set; }
 		public void OnGet()
 		{
 
@@ -14,7 +14,7 @@ namespace SuperheroSocial.Pages
 
 		public IActionResult OnPut(int id, SuperheroModel updatedSuperhero)
 		{
-			var item = Superheroes.FirstOrDefault(s => s.Id == id);
+			var item = heroes.FirstOrDefault(s => s.Id == id);
 			if (item == null)
 			{
 				return Page();
@@ -26,7 +26,7 @@ namespace SuperheroSocial.Pages
 				item.SecretIdentity = updatedSuperhero.SecretIdentity;
 				item.SuperPower = updatedSuperhero.SuperPower;
 
-				return
+				return RedirectToPage("/index");
 			}
 
 		}

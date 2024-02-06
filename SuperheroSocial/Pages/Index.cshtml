@@ -10,48 +10,51 @@
    <h4>New hero? Sign up for free!</h4>
 
         <form method="post">
-        <div>
+        <div><
             <div>
                 <br />
                 <label>Superhero name: </label>
-                <input type="name" placeholder="Superhero name" asp-for="@Model.Name" />
+                <input type="text" placeholder="Superhero name" asp-for="@Model.Name" />
             </div>
             <div>
                 <br />
                 <label>Secret identity: </label>
-                <input type="identity" placeholder="Secret identity" asp-for="@Model.SecretIdentity" />
+                <input type="text" placeholder="Secret identity" asp-for="@Model.SecretIdentity" />
             </div>
             <div>
                 <br />
                 <label>What kind of superpower do you have? </label>
-                <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower1" />
+                <input type="text" placeholder="Superpower" asp-for="@Model.Superpower1" />
             </div>
             <div>
                 <br />
                 <label>What kind of superpower do you have? </label>
-                <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower2" />
+                <input type="text" placeholder="Superpower" asp-for="@Model.Superpower2" />
             </div>
             <div>
                 <br />
                 <label>What kind of superpower do you have? </label>
-                <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower3" />
+                <input type="text" placeholder="Superpower" asp-for="@Model.Superpower3" />
             </div>
             <br />
 
-            <input class="btn btn-success" type="signup" value="Sign up!" />
+            <input class="btn btn-success" type="submit" value="Sign up!" />
         </div>
+        
+        </form>
+        <form method="post">
         <div>
-            <div>
+            
                 <br /> <br />
                 <br />
                 <label>Do you want to change your profile? </label>
                 <input type="Id" placeholder="Hero Id" asp-for="@Model.Id" />
                 <br />
                 <br />
-                <input class="btn btn-warning" type="makechanges" value="Make changes!" />
+                <input class="btn btn-warning" type="submit" value="Make changes!" />
             </div>
-            <img src="\image\batman.jpg" />
-        </div>
+            
+        
         </form>
         
     

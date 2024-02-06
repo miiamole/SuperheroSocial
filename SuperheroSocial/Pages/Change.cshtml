@@ -2,3 +2,20 @@
 @model SuperheroSocial.Pages.ChangeModel
 @{
 }
+<h1>Update your info</h1>
+<form method="put">
+	<label>Name: </label>
+	<input type="text" placeholder="Name" asp-for="Superheroes.Name" />
+	<br />
+	<label>Secret identity: </label>
+	<input type="text" placeholder="Secret identity" asp-for="Superheroes.SecretIdentity" />
+	<br />
+	<label>Superpower: </label>
+	<input type="text" placeholder="Superpower" asp-for="Superheroes.SuperPower" />
+	<input type="text" placeholder="Superpower" asp-for="Superheroes.SuperPower" />
+	<input type="text" placeholder="Superpower" asp-for="Superheroes.SuperPower" />
+	<br />
+	<img src="" />
+
+	<input class="btn btn-danger" type="submit" value="Update" />
+</form>

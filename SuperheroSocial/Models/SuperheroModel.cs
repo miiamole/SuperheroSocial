@@ -11,8 +11,5 @@
 		public List<SuperpowerModel> SuperPower { get; set; }
 
 		public string? Image { get; set; }
-
-
-
 	}
 }

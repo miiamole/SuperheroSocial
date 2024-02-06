@@ -12,15 +12,43 @@
        <div>
             <br />
             <label>Superhero name: </label>
-            <input type="text" placeholder="Superhero name" asp-for="@Model.Name" />
+            <input type="name" placeholder="Superhero name" asp-for="@Model.Name" />
        </div>
         <div>
             <br />
             <label>Secret identity: </label>
-            <input type="text" placeholder="Superhero name" asp-for="@Model.Name" />
+            <input type="identity" placeholder="Secret identity" asp-for="@Model.SecretIdentity" />
         </div>
+        <div>
+            <br />
+            <label>What kind of superpower do you have? </label>
+            <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower1" />
+        </div>
+        <div>
+            <br />
+            <label>What kind of superpower do you have? </label>
+            <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower2" />
+        </div>
+        <div>
+            <br />
+            <label>What kind of superpower do you have? </label>
+            <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower3" />
+        </div>
+        <br />
        
-        <a asp-page="Overview" asp-route-name="Overview" class="btn btn-warning">Sign up!</a>
+        <input class="btn btn-success" type="signup" value="Sign up!" />
+   </div>
+   <div>
+        <div>
+            <br /> <br />
+            <br />
+            <label>Do you want to change your profile? </label>
+            <input type="Id" placeholder="Hero Id" asp-for="@Model.Id" />
+            <br />
+            <br />
+            <input class="btn btn-warning" type="makechanges" value="Make changes!" />
+        </div>
+        <img src="\image\batman.jpg" />
    </div>
    
 </div>

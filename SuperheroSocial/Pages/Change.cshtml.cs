@@ -10,7 +10,10 @@ namespace SuperheroSocial.Pages
 		public void OnGet()
 		{
 
+
+
 		}
+
 
 		public IActionResult OnPut(int id, SuperheroModel updatedSuperhero)
 		{

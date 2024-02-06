@@ -8,48 +8,54 @@
    <h1>Superhero Social Club</h1>
 
    <h4>New hero? Sign up for free!</h4>
-   <div>
-       <div>
-            <br />
-            <label>Superhero name: </label>
-            <input type="name" placeholder="Superhero name" asp-for="@Model.Name" />
-       </div>
+
+        <form method="post">
         <div>
+            <div>
+                <br />
+                <label>Superhero name: </label>
+                <input type="name" placeholder="Superhero name" asp-for="@Model.Name" />
+            </div>
+            <div>
+                <br />
+                <label>Secret identity: </label>
+                <input type="identity" placeholder="Secret identity" asp-for="@Model.SecretIdentity" />
+            </div>
+            <div>
+                <br />
+                <label>What kind of superpower do you have? </label>
+                <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower1" />
+            </div>
+            <div>
+                <br />
+                <label>What kind of superpower do you have? </label>
+                <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower2" />
+            </div>
+            <div>
+                <br />
+                <label>What kind of superpower do you have? </label>
+                <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower3" />
+            </div>
             <br />
-            <label>Secret identity: </label>
-            <input type="identity" placeholder="Secret identity" asp-for="@Model.SecretIdentity" />
+
+            <input class="btn btn-success" type="signup" value="Sign up!" />
         </div>
         <div>
-            <br />
-            <label>What kind of superpower do you have? </label>
-            <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower1" />
+            <div>
+                <br /> <br />
+                <br />
+                <label>Do you want to change your profile? </label>
+                <input type="Id" placeholder="Hero Id" asp-for="@Model.Id" />
+                <br />
+                <br />
+                <input class="btn btn-warning" type="makechanges" value="Make changes!" />
+            </div>
+            <img src="\image\batman.jpg" />
         </div>
-        <div>
-            <br />
-            <label>What kind of superpower do you have? </label>
-            <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower2" />
-        </div>
-        <div>
-            <br />
-            <label>What kind of superpower do you have? </label>
-            <input type="superpower" placeholder="Superpower" asp-for="@Model.Superpower3" />
-        </div>
-        <br />
-       
-        <input class="btn btn-success" type="signup" value="Sign up!" />
-   </div>
-   <div>
-        <div>
-            <br /> <br />
-            <br />
-            <label>Do you want to change your profile? </label>
-            <input type="Id" placeholder="Hero Id" asp-for="@Model.Id" />
-            <br />
-            <br />
-            <input class="btn btn-warning" type="makechanges" value="Make changes!" />
-        </div>
-        <img src="\image\batman.jpg" />
-   </div>
+        </form>
+        
+    
    
 </div>
+
 
